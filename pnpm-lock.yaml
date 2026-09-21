@@ -12,7 +12,7 @@ importers:
         specifier: 2.0.0-alpha.20
         version: 2.0.0-alpha.20(postcss@8.5.28)
       vitepress-sidebar:
-        specifier: ^1.33.2
+        specifier: ^1.40.0
         version: 1.40.0
 
 packages:
