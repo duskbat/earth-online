@@ -8,6 +8,9 @@ const sections = ["种植", "标本", "poe2"];
 export default defineConfig({
   srcDir: "docs",
 
+  // GitHub Pages 项目页地址为 https://duskbat.github.io/earth-online/
+  base: "/earth-online/",
+
   title: "Earth Online",
   description: "Life EXP & Walkthroughs",
   themeConfig: {
