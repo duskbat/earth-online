@@ -29,7 +29,8 @@ export default defineConfig({
           scanStartPath: `manual/${name}`,
           resolvePath: `/manual/${name}/`,
           useTitleFromFileHeading: true,
-          sortMenusByCustomFunction: (a, b) => a.fileName.localeCompare(b.fileName, "zh"),
+          sortMenusByCustomFunction: (a, b) =>
+            a.fileName.localeCompare(b.fileName, "zh"),
         }))
       ),
       // 其余页面
@@ -44,8 +45,6 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/duskbat" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/duskbat" }],
   },
 });
