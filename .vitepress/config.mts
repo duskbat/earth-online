@@ -18,10 +18,14 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
+
       ...sections.map((name) => ({ text: name, link: `/manual/${name}/` })),
+      { text: "茶", link: "/manual/茶" },
     ],
 
     sidebar: {
+      // 茶：单文件，侧边栏仅展示自身
+      "/manual/茶": [{ text: "茶", link: "/manual/茶" }],
       // 各板块：进入 /manual/<板块>/ 后侧边栏展示其下每个文档（标题取一级标题，按拼音排序）
       ...generateSidebar(
         sections.map((name) => ({
@@ -33,6 +37,7 @@ export default defineConfig({
             a.fileName.localeCompare(b.fileName, "zh"),
         }))
       ),
+
       // 其余页面
       "/": [
         {
